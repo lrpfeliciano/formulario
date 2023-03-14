@@ -3,14 +3,20 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-
+import { FormsModule, ReactiveFormsModule } 
+  from '@angular/forms';
+import { NovaComponent } from './nova/nova.component';
+import { RouterModule, Routes } from '@angular/router';
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    NovaComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+        ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
